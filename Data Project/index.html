@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/c3.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Mental Illness in Veterans</title>
+
+  </head>
+
+
+  <body>
+    <div class="container-fluid dashboard">
+    <div class="container-fluid title">
+      <div class="row">
+    <h1>Mental Illness in Veterans</h1>
+    <h2> in the United States </h2>
+    <h3> By BAILEY YOUNG &nbsp;&nbsp;&nbsp;&nbsp; Oct. 31, 2021</h3>
+
+    <div class="row">
+      <div class="col-xs-12 center-block text-center">
+    <p> This dataset, also known as the National Veteran Health Equity Report details patterns and rates of heath conditions
+      for vulnerable Veteran groups. It provides comparative information on sociodemographics and rates of diagnosed health
+      conditions in vulnerable groups. The information will allow Veteran Affairs, Veterans, and stakeholders monitor the
+      care Veterans receive and set goals for improving care. </p>
+      </div>
+</div>
+</div>
+
+
+<hr>
+</div>
+
+
+<div class="container-fluid tabular">
+  <div class="row">
+    <div class="col-sm-12 col-md-7">
+      <div class="top-5-graph"></div>
+      <div id="chart"></div>
+    </div>
+    <div class="col-2 blurb-1">
+      <div class="blurb-1-filler">
+      <h2> Most Common Illnesses</h2>
+      <p> The National Veteran Health Equity Report focuses on 5 categories of mental illness: anxiety, PTSD (Post-Traumatic Stress Disorder), substance abuse, serious mental illness, and other mental illnesses. From this data, anxiety is overwhelmingly the most common mental illness among the five with over a million reported cases. This is followed by serious mental illness and PTSD. Of the data, the majority of reported cases come from men.
+
+</p>
+      </div>
+    </div>
+  </div>
+  </div>
+<hr>
+
+  <div class="container-fluid in-depth">
+    <div class="row">
+      <div class="col-xs-12 cetner-block text-center">
+      <h2> PTSD by the Numbers </h2>
+</div>
+      <div class="col">
+        <div class="age">
+          <div id="chart2"></div>
+        </div>
+        <h2> Age </h2>
+        </div>
+
+      <div class="col">
+          <div class="race">
+          <div id="chart3"></div>
+          </div>
+          <h2> Race </h2>
+        </div>
+
+        <div class="col">
+            <div class="gender">
+            <div id="chart4"></div>
+            </div>
+            <h2> Gender </h2>
+          </div>
+</div>
+        <div class="row">
+          <div class="blurb-2-filler">
+            <p>The mental illness most associated with veterans is PTSD, these pie charts break down the illness into multiple sociodemographics. When comparing the age categories, the commonality of PTSD is widely spread through the age groups, with 45-64 year old’s being slightly more common. Within race, PTSD was most common within white individuals at 68% followed by Black individuals at 19%. This data is reflective of the demographics within the military in which the majority of members are white. Finally, in regards to gender the majority of cases are attributed to men. Once again a reflection of the military's demographics.</p>
+          </div>
+    </div>
+</div>
+
+
+<div class="container-fluid data-tables">
+  <div class="row">
+    <div class="col no-illness">
+      <div class="table-no-illness">
+      <table id="table_1" class="display">
+        <thead>
+          <tr>
+            <th> Group </th>
+            <th> Group 1</th>
+            <th> Subgroup </th>
+            <th> Mental Illness</th>
+            <th> Value </th>
+
+    </tr>
+    </thead>
+    <tfoot>
+        <tr>
+          <th> Group </th>
+          <th> Group 1</th>
+          <th> Subgroup </th>
+          <th> Mental Illness</th>
+          <th> Value </th>
+          </tr>
+          </tfoot>
+</table>
+
+<h2> Total Data </h2>
+
+      </div>
+      </div>
+
+
+    <div class="col total">
+      <div class="table-total">
+
+        <table id="table_2" class="display">
+          <thead>
+            <tr>
+              <th> Vulnerable Population</th>
+              <th> Section</th>
+              <th> Long Title </th>
+              <th> Short Title</th>
+              <th> Group </th>
+              <th> Subgroup </th>
+              <th> Geography</th>
+              <th> Value </th>
+
+      </tr>
+      </thead>
+      <tfoot>
+          <tr>
+            <th> Vulnerable Population</th>
+            <th> Section</th>
+            <th> Long Title </th>
+            <th> Short Title</th>
+            <th> Group </th>
+            <th> Subgroup </th>
+            <th> Geography</th>
+            <th> Value </th>
+            </tr>
+            </tfoot>
+</table>
+
+
+      <h2> Mental Illness by Geography </h2>
+
+      </div>
+      </div>
+    </div>
+    </div>
+
+<button onclick="topFunction()" id="myBtn"><img src="img/up-arrow.png" width="50" height="50"></button>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <script src="js/c3.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
